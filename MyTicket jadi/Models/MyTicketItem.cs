@@ -35,19 +35,18 @@ namespace MyTicket_jadi.Models
             roundedPanel.Controls.Add(labelHargaTiket);
             roundedPanel.Controls.Add(labelKuantitas);
             roundedPanel.Controls.Add(buttonLihatWisata);
-            buttonLihatWisata.Text = "Lihat";
-            buttonLihatWisata.Click += ButtonLihatWisata_Click;
             roundedPanel.Controls.Add(pbMasaBerlakuTiket);
             roundedPanel.Controls.Add(labelAlamatWisata);
             roundedPanel.Controls.Add(pbLocation);
-            pbLocation.Image = (Image)resources.GetObject("pbLocation.Image");
-            roundedPanel.Controls.Add(pbRating);
-            pbRating.Image = (Image)resources.GetObject("pbRating.Image");
             roundedPanel.Controls.Add(lbNamaWisata);
             roundedPanel.Controls.Add(labelETiket);
-            labelETiket.Text = "E - Tiket";
             roundedPanel.Controls.Add(roundedPicboxWisata);
             roundedPanel.Controls.Add(labelMasaBerlakuTiket);
+            roundedPanel.Controls.Add(pbRating);
+
+            pbLocation.Image = (Image)resources.GetObject("pbLocation.Image");
+            pbRating.Image = (Image)resources.GetObject("pbRating.Image");
+            labelETiket.Text = "E - Tiket";
             labelMasaBerlakuTiket.Text = "Berlaku 24 Jam";
             roundedPanel.CornerRadius = 30;
             roundedPanel.Margin = new Padding(3, 4, 3, 4);
@@ -68,6 +67,8 @@ namespace MyTicket_jadi.Models
             panelGarisTiket.Size = new Size(756, 4);
             panelGarisTiket.Name = "panelGarisTiket";
 
+            buttonLihatWisata.Text = "Lihat";
+            buttonLihatWisata.Click += ButtonLihatWisata_Click;
             buttonLihatWisata.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonLihatWisata.BackColor = Color.Transparent;
             buttonLihatWisata.FlatAppearance.BorderSize = 0;
