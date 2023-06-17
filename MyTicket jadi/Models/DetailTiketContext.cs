@@ -15,7 +15,7 @@ namespace MyTicket_jadi.Models
         public bool Read()
         {
             bool isSuccess = false;
-            string constr = " Host=localhost;Port=5432;Database= Data Wisata;Username=postgres;Password=Memew001";
+            string constr = "Host=localhost;Port=5432;Database= Data Wisata;Username=postgres;Password=Memew001";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {

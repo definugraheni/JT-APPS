@@ -176,7 +176,16 @@ namespace MyTicket_jadi.Models
                 MyTicketPapuma papuma = new MyTicketPapuma();
                 papuma.Show();
             }
-
+            if (lbNamaWisata.Text == "Patemon")
+            {
+                MyTicketPatemon patemon = new MyTicketPatemon();
+                patemon.Show();
+            }
+            if (lbNamaWisata.Text == "Watu Ulo")
+            {
+                MyTicketWatuUlo watuUlo = new MyTicketWatuUlo();
+                watuUlo.Show();
+            }
         }
 
         public RoundedPanel CreateItem()
