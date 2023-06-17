@@ -86,32 +86,8 @@ namespace MyTicket_jadi
 
         private void MyTicketRembangan_Load(object sender, EventArgs e)
         {
-            string conectionString = "Host=localhost;Port=5432;Database= Data Wisata;Username=postgres;Password=Memew001";
-            NpgsqlConnection connection = new NpgsqlConnection(conectionString);
 
-            string Rembangan = "SELECT * FROM wisata WHERE id_wisata ='A01'";
-            //string  = "";
 
-            NpgsqlCommand cmd = new NpgsqlCommand(Rembangan, connection);
-
-            connection.Open();
-            NpgsqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.HasRows)
-            {
-                while (reader.Read())
-                {
-
-                    string labelData = (string)reader["deskripsi_wisata"];
-                    string judul = (string)reader["nama_wisata"];
-                    label4.Text = labelData;
-                    label1.Text = judul;
-
-                }
-            }
-
-            reader.Close();
-            connection.Close();
         }
     }
 }

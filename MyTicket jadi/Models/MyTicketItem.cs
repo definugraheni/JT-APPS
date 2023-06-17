@@ -1,6 +1,7 @@
 ﻿using MyTicket_jadi.Properties;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -28,7 +29,12 @@ namespace MyTicket_jadi.Models
 
         public MyTicketItem(string nama, string alamat, string kuantitas, string harga)
         {
-            //roundedPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            roundedPanel.CornerRadius = 30;
+            roundedPanel.Margin = new Padding(3, 4, 3, 4);
+            roundedPanel.Name = "roundedPanel";
+            roundedPanel.Size = new Size(846, 165);
+            roundedPanel.TabIndex = 0;
             roundedPanel.Anchor = AnchorStyles.None;
             roundedPanel.BackColor = Color.FromArgb(209, 232, 232);
             roundedPanel.Controls.Add(panelGarisTiket);
@@ -43,16 +49,6 @@ namespace MyTicket_jadi.Models
             roundedPanel.Controls.Add(roundedPicboxWisata);
             roundedPanel.Controls.Add(labelMasaBerlakuTiket);
             roundedPanel.Controls.Add(pbRating);
-
-            pbLocation.Image = (Image)resources.GetObject("pbLocation.Image");
-            pbRating.Image = (Image)resources.GetObject("pbRating.Image");
-            labelETiket.Text = "E - Tiket";
-            labelMasaBerlakuTiket.Text = "Berlaku 24 Jam";
-            roundedPanel.CornerRadius = 30;
-            roundedPanel.Margin = new Padding(3, 4, 3, 4);
-            roundedPanel.Name = "roundedPanel";
-            roundedPanel.Size = new Size(846, 165);
-            roundedPanel.TabIndex = 0;
 
             labelAlamatWisata.AutoSize = true;
             labelAlamatWisata.Font = new Font("Poppins", 7F, FontStyle.Regular, GraphicsUnit.Point);
@@ -122,6 +118,7 @@ namespace MyTicket_jadi.Models
             labelETiket.Location = new Point(121, 21);
             labelETiket.Name = "labelETiket";
             labelETiket.Size = new Size(74, 22);
+            labelETiket.Text = "E - Tiket";
 
             roundedPicboxWisata.CornerRadius = 10;
             roundedPicboxWisata.Image = (Image)resources.GetObject("roundedPicboxWisata.Image");
@@ -142,6 +139,7 @@ namespace MyTicket_jadi.Models
             labelMasaBerlakuTiket.Location = new Point(45, 132);
             labelMasaBerlakuTiket.Name = "labelMasaBerlakuTiket";
             labelMasaBerlakuTiket.Size = new Size(118, 22);
+            labelMasaBerlakuTiket.Text = "Berlaku 24 Jam";
 
             labelHargaTiket.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelHargaTiket.AutoSize = true;
@@ -166,7 +164,19 @@ namespace MyTicket_jadi.Models
 
         private void ButtonLihatWisata_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Deppi Memew");
+            //MessageBox.Show("Deppi Memew");
+            string nama = lbNamaWisata.Text;
+            if (lbNamaWisata.Text == "Rembangan" )
+            {
+                MyTicketRembangan rembangan = new MyTicketRembangan();
+                rembangan.Show();
+            }
+            if (lbNamaWisata.Text == "Papuma")
+            {
+                MyTicketPapuma papuma = new MyTicketPapuma();
+                papuma.Show();
+            }
+
         }
 
         public RoundedPanel CreateItem()

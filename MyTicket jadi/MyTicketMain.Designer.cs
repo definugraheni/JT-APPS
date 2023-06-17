@@ -725,7 +725,7 @@
             flpMyTicket.Controls.Add(roundedPanel2);
             flpMyTicket.Controls.Add(roundedPanel1);
             flpMyTicket.FlowDirection = FlowDirection.TopDown;
-            flpMyTicket.Location = new Point(199, 66);
+            flpMyTicket.Location = new Point(198, 77);
             flpMyTicket.Name = "flpMyTicket";
             flpMyTicket.Size = new Size(898, 672);
             flpMyTicket.TabIndex = 9;
