@@ -48,9 +48,7 @@ namespace MyTicket_jadi
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MyTicketPapuma myTicketPapuma = new MyTicketPapuma();
-            myTicketPapuma.Show();
-            this.Hide();
+
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
