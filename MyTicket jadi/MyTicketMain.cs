@@ -66,11 +66,13 @@ namespace MyTicket_jadi
             flpMyTicket.Controls.Clear();
             foreach (var tiket in tiketList)
             {
-                string nama = tiket.nama_wisata;
-                string alamat = tiket.alamat_wisata;
-                string kuantitas = tiket.kuatitas;
-                string harga = tiket.harga_tiket;
-                RoundedPanel ticketItem = new MyTicketItem(nama, alamat, kuantitas, harga).CreateItem();
+
+                lbNamaWisata.Text = tiket.nama_wisata;
+                labelAlamatWisata.Text = tiket.alamat_wisata;
+                labelKuantitas.Text = tiket.kuatitas;
+                labelHargaTiket.Text = tiket.harga_tiket;
+
+                RoundedPanel ticketItem = new MyTicketItem(tiket).CreateItem();
                 flpMyTicket.Controls.Add(ticketItem);
             }
 

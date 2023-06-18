@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyTicket_jadi.Models;
 using Npgsql;
 
 namespace MyTicket_jadi
@@ -35,12 +36,10 @@ namespace MyTicket_jadi
             }
             conn.Close();
         }
-
+       
         private void customRoundedButton1_Click(object sender, EventArgs e)
         {
-            MyTicketMain myTicketForm = new MyTicketMain();
-            myTicketForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,5 +71,13 @@ namespace MyTicket_jadi
         {
             this.Close();
         }
+
+        //public void SetMyticket(MyTiket myTiket)
+        //{
+        //    labelnamaWisata.Text = myTiket.nama_wisata;
+        //    labeldeskripsi.Text = myTiket.harga_tiket;
+        //    labeldeskripsi.Text = myTiket.nama_wisata;
+        //    labelHarga.Text = myTiket.nama_wisata;
+        //}
     }
 }

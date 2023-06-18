@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MyTicket_jadi.Models
 {
-    internal class MyTicketItem
+    public class MyTicketItem
     {
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyTicketMain));
         RoundedPanel roundedPanel = new();
@@ -26,9 +26,14 @@ namespace MyTicket_jadi.Models
         Label labelETiket = new();
         RoundedPicbox roundedPicboxWisata = new();
         Label labelMasaBerlakuTiket = new();
+        MyTiket MyTiket;
+        
 
-        public MyTicketItem(string nama, string alamat, string kuantitas, string harga)
+
+        public MyTicketItem(MyTiket myTiket)
         {
+            MyTiket = myTiket;
+
             roundedPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             roundedPanel.CornerRadius = 30;
             roundedPanel.Margin = new Padding(3, 4, 3, 4);
@@ -156,35 +161,43 @@ namespace MyTicket_jadi.Models
             labelKuantitas.Size = new Size(29, 26);
 
 
-            lbNamaWisata.Text = nama;
-            labelAlamatWisata.Text = alamat;
-            labelKuantitas.Text = kuantitas;
-            labelHargaTiket.Text = harga;
+            lbNamaWisata.Text = myTiket.nama_wisata;
+            labelAlamatWisata.Text = myTiket.alamat_wisata;
+            labelKuantitas.Text = myTiket.kuatitas;
+            labelHargaTiket.Text = myTiket.harga_tiket;
         }
+
 
         private void ButtonLihatWisata_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Deppi Memew");
-            string nama = lbNamaWisata.Text;
-            if (lbNamaWisata.Text == "Rembangan" )
+            //string nama = lbNamaWisata.Text;
+            //if (lbNamaWisata.Text == "Rembangan" )
+            //{
+            //    MyTicketRembangan rembangan = new MyTicketRembangan();
+            //    rembangan.Show();
+            //}
+            //if (lbNamaWisata.Text == "Papuma")
+            //{
+            //    MyTicketPapuma papuma = new MyTicketPapuma();
+            //    papuma.Show();
+            //}
+            //if (lbNamaWisata.Text == "Patemon")
+            //{
+            //    MyTicketPatemon patemon = new MyTicketPatemon();
+            //    patemon.Show();
+            //}
+            //if (lbNamaWisata.Text == "Watu Ulo")
+            //{
+            //    MyTicketWatuUlo watuUlo = new MyTicketWatuUlo();
+            //    watuUlo.Show();
+            //}
+
+            using (MyTicketRembangan updateForm = new MyTicketRembangan())
             {
-                MyTicketRembangan rembangan = new MyTicketRembangan();
-                rembangan.Show();
-            }
-            if (lbNamaWisata.Text == "Papuma")
-            {
-                MyTicketPapuma papuma = new MyTicketPapuma();
-                papuma.Show();
-            }
-            if (lbNamaWisata.Text == "Patemon")
-            {
-                MyTicketPatemon patemon = new MyTicketPatemon();
-                patemon.Show();
-            }
-            if (lbNamaWisata.Text == "Watu Ulo")
-            {
-                MyTicketWatuUlo watuUlo = new MyTicketWatuUlo();
-                watuUlo.Show();
+                    MytiketContext mytiketContext = new MytiketContext();
+                    updateForm.SetMyticket(MyTiket);
+                    DialogResult dr = updateForm.ShowDialog();
             }
         }
 

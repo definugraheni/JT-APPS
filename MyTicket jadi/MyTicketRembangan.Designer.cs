@@ -38,15 +38,16 @@
             pictureBoxLogo = new PictureBox();
             panelMain = new Panel();
             panel1 = new Panel();
-            labeldeskripsi = new Label();
-            label2 = new Label();
+            namaDeskripsi = new Label();
+            labeldeskripsiIsi = new Label();
+            lbDeskripsi = new Label();
             customRoundedButton1 = new CustomRoundedButton();
-            panel2 = new Panel();
+            panelGambarWisata = new Panel();
             roundedPanel1 = new RoundedPanel();
             label6 = new Label();
-            pictureBox2 = new PictureBox();
+            PBRating = new PictureBox();
             labelnamaWisata = new Label();
-            label3 = new Label();
+            labelharga = new Label();
             panelNavbar = new Panel();
             button1 = new Button();
             labelMyTicket = new Label();
@@ -54,9 +55,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panelMain.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            panelGambarWisata.SuspendLayout();
             roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PBRating).BeginInit();
             panelNavbar.SuspendLayout();
             SuspendLayout();
             // 
@@ -177,38 +178,50 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(labeldeskripsi);
-            panel1.Controls.Add(label2);
+            panel1.Controls.Add(namaDeskripsi);
+            panel1.Controls.Add(labeldeskripsiIsi);
+            panel1.Controls.Add(lbDeskripsi);
             panel1.Controls.Add(customRoundedButton1);
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(panelGambarWisata);
+            panel1.Controls.Add(labelharga);
             panel1.Location = new Point(32, 41);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(841, 552);
             panel1.TabIndex = 4;
             // 
-            // labeldeskripsi
+            // namaDeskripsi
             // 
-            labeldeskripsi.AutoSize = true;
-            labeldeskripsi.BackColor = Color.Transparent;
-            labeldeskripsi.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labeldeskripsi.Location = new Point(61, 220);
-            labeldeskripsi.Name = "labeldeskripsi";
-            labeldeskripsi.Size = new Size(88, 26);
-            labeldeskripsi.TabIndex = 12;
-            labeldeskripsi.Text = "DESKRIPSI ";
+            namaDeskripsi.AutoSize = true;
+            namaDeskripsi.BackColor = Color.Transparent;
+            namaDeskripsi.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            namaDeskripsi.Location = new Point(140, 167);
+            namaDeskripsi.Name = "namaDeskripsi";
+            namaDeskripsi.Size = new Size(109, 26);
+            namaDeskripsi.TabIndex = 13;
+            namaDeskripsi.Text = "REMBANGAN";
             // 
-            // label2
+            // labeldeskripsiIsi
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(61, 167);
-            label2.Name = "label2";
-            label2.Size = new Size(187, 26);
-            label2.TabIndex = 11;
-            label2.Text = "DESKRIPSI REMBANGAN";
+            labeldeskripsiIsi.AutoSize = true;
+            labeldeskripsiIsi.BackColor = Color.Transparent;
+            labeldeskripsiIsi.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labeldeskripsiIsi.Location = new Point(61, 220);
+            labeldeskripsiIsi.Name = "labeldeskripsiIsi";
+            labeldeskripsiIsi.Size = new Size(88, 26);
+            labeldeskripsiIsi.TabIndex = 12;
+            labeldeskripsiIsi.Text = "DESKRIPSI ";
+            // 
+            // lbDeskripsi
+            // 
+            lbDeskripsi.AutoSize = true;
+            lbDeskripsi.BackColor = Color.Transparent;
+            lbDeskripsi.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lbDeskripsi.Location = new Point(61, 167);
+            lbDeskripsi.Name = "lbDeskripsi";
+            lbDeskripsi.Size = new Size(86, 26);
+            lbDeskripsi.TabIndex = 11;
+            lbDeskripsi.Text = "DESKRIPSI";
             // 
             // customRoundedButton1
             // 
@@ -230,20 +243,20 @@
             customRoundedButton1.UseVisualStyleBackColor = false;
             customRoundedButton1.Click += customRoundedButton1_Click;
             // 
-            // panel2
+            // panelGambarWisata
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.BackColor = Color.Transparent;
-            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
-            panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            panel2.Controls.Add(roundedPanel1);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(labelnamaWisata);
-            panel2.Location = new Point(1, 0);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(657, 119);
-            panel2.TabIndex = 9;
+            panelGambarWisata.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panelGambarWisata.BackColor = Color.Transparent;
+            panelGambarWisata.BackgroundImage = (Image)resources.GetObject("panelGambarWisata.BackgroundImage");
+            panelGambarWisata.BackgroundImageLayout = ImageLayout.Stretch;
+            panelGambarWisata.Controls.Add(roundedPanel1);
+            panelGambarWisata.Controls.Add(PBRating);
+            panelGambarWisata.Controls.Add(labelnamaWisata);
+            panelGambarWisata.Location = new Point(1, 0);
+            panelGambarWisata.Margin = new Padding(3, 4, 3, 4);
+            panelGambarWisata.Name = "panelGambarWisata";
+            panelGambarWisata.Size = new Size(657, 119);
+            panelGambarWisata.TabIndex = 9;
             // 
             // roundedPanel1
             // 
@@ -267,16 +280,16 @@
             label6.TabIndex = 10;
             label6.Text = "E - Ticket";
             // 
-            // pictureBox2
+            // PBRating
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(98, 75);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(97, 20);
-            pictureBox2.TabIndex = 7;
-            pictureBox2.TabStop = false;
+            PBRating.BackColor = Color.Transparent;
+            PBRating.Image = (Image)resources.GetObject("PBRating.Image");
+            PBRating.Location = new Point(98, 75);
+            PBRating.Margin = new Padding(3, 4, 3, 4);
+            PBRating.Name = "PBRating";
+            PBRating.Size = new Size(97, 20);
+            PBRating.TabIndex = 7;
+            PBRating.TabStop = false;
             // 
             // labelnamaWisata
             // 
@@ -290,17 +303,17 @@
             labelnamaWisata.TabIndex = 5;
             labelnamaWisata.Text = "rembangan";
             // 
-            // label3
+            // labelharga
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(701, 57);
-            label3.Name = "label3";
-            label3.Size = new Size(111, 36);
-            label3.TabIndex = 8;
-            label3.Text = "Rp 10.000";
+            labelharga.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelharga.AutoSize = true;
+            labelharga.BackColor = Color.Transparent;
+            labelharga.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelharga.Location = new Point(701, 57);
+            labelharga.Name = "labelharga";
+            labelharga.Size = new Size(111, 36);
+            labelharga.TabIndex = 8;
+            labelharga.Text = "Rp 10.000";
             // 
             // panelNavbar
             // 
@@ -363,11 +376,11 @@
             panelMain.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panelGambarWisata.ResumeLayout(false);
+            panelGambarWisata.PerformLayout();
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PBRating).EndInit();
             panelNavbar.ResumeLayout(false);
             panelNavbar.PerformLayout();
             ResumeLayout(false);
@@ -387,14 +400,15 @@
         private Label labelMyTicket;
         private Button button1;
         private Panel panel1;
-        private Label label3;
-        private PictureBox pictureBox2;
+        private Label labelharga;
+        private PictureBox PBRating;
         private Label labelnamaWisata;
-        private Panel panel2;
+        private Panel panelGambarWisata;
         private RoundedPanel roundedPanel1;
         private Label label6;
         private CustomRoundedButton customRoundedButton1;
-        private Label label2;
-        private Label labeldeskripsi;
+        private Label lbDeskripsi;
+        private Label labeldeskripsiIsi;
+        private Label namaDeskripsi;
     }
 }

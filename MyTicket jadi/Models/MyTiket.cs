@@ -7,7 +7,7 @@ using System.Windows.Forms.VisualStyles;
 
 namespace MyTicket_jadi.Models
 {
-    internal class MyTiket
+    public class MyTiket
     {
         public string nama_wisata { get; set; }
         public string alamat_wisata { get; set; }

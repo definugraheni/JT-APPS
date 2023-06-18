@@ -425,7 +425,7 @@
         RtaoWbtc/j8qWloO6FNQGwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panelGambarWisata.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAc0AAABZCAYAAABcxX/8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAA/7JJREFUeF60/WeQJMed7QvOHQLdXVVZqbXWWVlZWmuttc7SWmvd1dVaAA2ttRaE
@@ -2481,7 +2481,7 @@
         ZswiQgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PBRating.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFUAAAAPCAYAAACV4IPLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAmxJREFUWEe1WO1NwzAQtUgj8ZMNYARGYIRuABvQDWADukHZIPxDpKk6QkdghP5B
