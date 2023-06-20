@@ -164,8 +164,8 @@ namespace MyTicket_jadi.Models
 
             lbNamaWisata.Text = myTiket.nama_wisata;
             labelAlamatWisata.Text = myTiket.alamat_wisata;
-            labelKuantitas.Text = myTiket.kuantitas;
-            labelHargaTiket.Text = myTiket.harga_tiket;
+            labelKuantitas.Text = myTiket.kuantitas.ToString();
+            labelHargaTiket.Text = myTiket.harga_tiket.ToString();
         }
 
 

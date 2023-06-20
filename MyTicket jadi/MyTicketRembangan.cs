@@ -88,9 +88,9 @@ namespace MyTicket_jadi
         public void SetMyticket(MyTiket myTiket)
         {
             labelnamaWisata.Text = myTiket.nama_wisata;
-            labeldeskripsiIsi.Text = myTiket.harga_tiket;
+            labeldeskripsiIsi.Text = myTiket.deskripsi;
             namaDeskripsi.Text = myTiket.nama_wisata;
-            labelharga.Text = myTiket.nama_wisata;
+            labelharga.Text = myTiket.detailHarga.ToString();
         }
 
     }
