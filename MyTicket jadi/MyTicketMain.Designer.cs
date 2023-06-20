@@ -511,6 +511,7 @@
             // pbMasaBerlakuTiket
             // 
             pbMasaBerlakuTiket.BackgroundImage = (Image)resources.GetObject("pbMasaBerlakuTiket.BackgroundImage");
+            pbMasaBerlakuTiket.BackgroundImageLayout = ImageLayout.Stretch;
             pbMasaBerlakuTiket.Location = new Point(31, 133);
             pbMasaBerlakuTiket.Margin = new Padding(3, 4, 3, 4);
             pbMasaBerlakuTiket.Name = "pbMasaBerlakuTiket";

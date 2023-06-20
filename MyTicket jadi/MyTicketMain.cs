@@ -67,7 +67,7 @@ namespace MyTicket_jadi
 
                 lbNamaWisata.Text = tiket.nama_wisata;
                 labelAlamatWisata.Text = tiket.alamat_wisata;
-                labelKuantitas.Text = tiket.kuatitas;
+                labelKuantitas.Text = tiket.kuantitas;
                 labelHargaTiket.Text = tiket.harga_tiket;
 
                 RoundedPanel ticketItem = new MyTicketItem(tiket).CreateItem();

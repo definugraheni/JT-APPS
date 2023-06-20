@@ -12,7 +12,7 @@ namespace MyTicket_jadi.Models
         public string nama_wisata { get; set; }
         public string alamat_wisata { get; set; }
         public string harga_tiket { get; set; }
-        public string kuatitas  { get; set; }
+        public string kuantitas  { get; set; }
       
     }
 }

@@ -94,6 +94,7 @@ namespace MyTicket_jadi.Models
             labelKuantitas.Name = "labelKuantitas";
 
             pbMasaBerlakuTiket.BackgroundImage = (Image)resources.GetObject("pbMasaBerlakuTiket.BackgroundImage");
+            pbMasaBerlakuTiket.BackgroundImageLayout = ImageLayout.Stretch;
             pbMasaBerlakuTiket.Location = new Point(31, 133);
             pbMasaBerlakuTiket.Margin = new Padding(3, 4, 3, 4);
             pbMasaBerlakuTiket.Name = "pbMasaBerlakuTiket";
@@ -163,41 +164,19 @@ namespace MyTicket_jadi.Models
 
             lbNamaWisata.Text = myTiket.nama_wisata;
             labelAlamatWisata.Text = myTiket.alamat_wisata;
-            labelKuantitas.Text = myTiket.kuatitas;
+            labelKuantitas.Text = myTiket.kuantitas;
             labelHargaTiket.Text = myTiket.harga_tiket;
         }
 
 
         private void ButtonLihatWisata_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Deppi Memew");
-            //string nama = lbNamaWisata.Text;
-            //if (lbNamaWisata.Text == "Rembangan" )
-            //{
-            //    MyTicketRembangan rembangan = new MyTicketRembangan();
-            //    rembangan.Show();
-            //}
-            //if (lbNamaWisata.Text == "Papuma")
-            //{
-            //    MyTicketPapuma papuma = new MyTicketPapuma();
-            //    papuma.Show();
-            //}
-            //if (lbNamaWisata.Text == "Patemon")
-            //{
-            //    MyTicketPatemon patemon = new MyTicketPatemon();
-            //    patemon.Show();
-            //}
-            //if (lbNamaWisata.Text == "Watu Ulo")
-            //{
-            //    MyTicketWatuUlo watuUlo = new MyTicketWatuUlo();
-            //    watuUlo.Show();
-            //}
 
             using (MyTicketRembangan updateForm = new MyTicketRembangan())
             {
-                    MytiketContext mytiketContext = new MytiketContext();
-                    updateForm.SetMyticket(MyTiket);
-                    DialogResult dr = updateForm.ShowDialog();
+                MytiketContext mytiketContext = new MytiketContext();
+                updateForm.SetMyticket(MyTiket);
+                DialogResult dr = updateForm.ShowDialog();
             }
         }
 

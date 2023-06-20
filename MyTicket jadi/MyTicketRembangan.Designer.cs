@@ -195,11 +195,11 @@
             namaDeskripsi.AutoSize = true;
             namaDeskripsi.BackColor = Color.Transparent;
             namaDeskripsi.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            namaDeskripsi.Location = new Point(140, 167);
+            namaDeskripsi.Location = new Point(135, 167);
             namaDeskripsi.Name = "namaDeskripsi";
-            namaDeskripsi.Size = new Size(109, 26);
+            namaDeskripsi.Size = new Size(107, 26);
             namaDeskripsi.TabIndex = 13;
-            namaDeskripsi.Text = "REMBANGAN";
+            namaDeskripsi.Text = "Rembangan";
             // 
             // labeldeskripsiIsi
             // 
@@ -219,9 +219,9 @@
             lbDeskripsi.Font = new Font("Poppins SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lbDeskripsi.Location = new Point(61, 167);
             lbDeskripsi.Name = "lbDeskripsi";
-            lbDeskripsi.Size = new Size(86, 26);
+            lbDeskripsi.Size = new Size(81, 26);
             lbDeskripsi.TabIndex = 11;
-            lbDeskripsi.Text = "DESKRIPSI";
+            lbDeskripsi.Text = "Deskripsi";
             // 
             // customRoundedButton1
             // 
@@ -331,12 +331,13 @@
             // button1
             // 
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(15, 20);
+            button1.Location = new Point(15, 27);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(17, 24);
+            button1.Size = new Size(21, 24);
             button1.TabIndex = 3;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
