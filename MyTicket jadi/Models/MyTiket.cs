@@ -16,6 +16,7 @@ namespace MyTicket_jadi.Models
 
         public string deskripsi { get; set; }
         public decimal detailHarga { get; set; }
-      
+        public float rating { get; set; }  
+        
     }
 }

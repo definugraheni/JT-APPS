@@ -50,11 +50,6 @@ namespace MyTicket_jadi
         {
 
         }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void ShowItems()
         {
             mytiketContext.Read();
@@ -75,6 +70,5 @@ namespace MyTicket_jadi
             }
 
         }
-
     }
 }

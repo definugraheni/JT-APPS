@@ -43,21 +43,30 @@
             lbDeskripsi = new Label();
             customRoundedButton1 = new CustomRoundedButton();
             panelGambarWisata = new Panel();
+            pbRating5 = new PictureBox();
+            pbRating4 = new PictureBox();
+            pbRating3 = new PictureBox();
+            pbRating2 = new PictureBox();
+            pbRating1 = new PictureBox();
             roundedPanel1 = new RoundedPanel();
             label6 = new Label();
-            PBRating = new PictureBox();
             labelnamaWisata = new Label();
             labelharga = new Label();
             panelNavbar = new Panel();
             button1 = new Button();
             labelMyTicket = new Label();
+            label1 = new Label();
             panelSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panelMain.SuspendLayout();
             panel1.SuspendLayout();
             panelGambarWisata.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbRating5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating1).BeginInit();
             roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PBRating).BeginInit();
             panelNavbar.SuspendLayout();
             SuspendLayout();
             // 
@@ -75,7 +84,6 @@
             panelSidebar.Name = "panelSidebar";
             panelSidebar.Size = new Size(193, 731);
             panelSidebar.TabIndex = 3;
-            panelSidebar.Paint += panelSidebar_Paint;
             // 
             // btnWishlist
             // 
@@ -178,6 +186,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(namaDeskripsi);
             panel1.Controls.Add(labeldeskripsiIsi);
             panel1.Controls.Add(lbDeskripsi);
@@ -249,14 +258,73 @@
             panelGambarWisata.BackColor = Color.Transparent;
             panelGambarWisata.BackgroundImage = (Image)resources.GetObject("panelGambarWisata.BackgroundImage");
             panelGambarWisata.BackgroundImageLayout = ImageLayout.Stretch;
+            panelGambarWisata.Controls.Add(pbRating5);
+            panelGambarWisata.Controls.Add(pbRating4);
+            panelGambarWisata.Controls.Add(pbRating3);
+            panelGambarWisata.Controls.Add(pbRating2);
+            panelGambarWisata.Controls.Add(pbRating1);
             panelGambarWisata.Controls.Add(roundedPanel1);
-            panelGambarWisata.Controls.Add(PBRating);
             panelGambarWisata.Controls.Add(labelnamaWisata);
             panelGambarWisata.Location = new Point(1, 0);
             panelGambarWisata.Margin = new Padding(3, 4, 3, 4);
             panelGambarWisata.Name = "panelGambarWisata";
             panelGambarWisata.Size = new Size(657, 119);
             panelGambarWisata.TabIndex = 9;
+            // 
+            // pbRating5
+            // 
+            pbRating5.Image = Properties.Resources.lop2Group_8;
+            pbRating5.Location = new Point(195, 74);
+            pbRating5.Margin = new Padding(3, 4, 3, 4);
+            pbRating5.Name = "pbRating5";
+            pbRating5.Size = new Size(25, 25);
+            pbRating5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating5.TabIndex = 26;
+            pbRating5.TabStop = false;
+            // 
+            // pbRating4
+            // 
+            pbRating4.Image = Properties.Resources.lop2Group_8;
+            pbRating4.Location = new Point(172, 74);
+            pbRating4.Margin = new Padding(3, 4, 3, 4);
+            pbRating4.Name = "pbRating4";
+            pbRating4.Size = new Size(25, 25);
+            pbRating4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating4.TabIndex = 25;
+            pbRating4.TabStop = false;
+            // 
+            // pbRating3
+            // 
+            pbRating3.Image = Properties.Resources.lop2Group_8;
+            pbRating3.Location = new Point(149, 74);
+            pbRating3.Margin = new Padding(3, 4, 3, 4);
+            pbRating3.Name = "pbRating3";
+            pbRating3.Size = new Size(25, 25);
+            pbRating3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating3.TabIndex = 24;
+            pbRating3.TabStop = false;
+            // 
+            // pbRating2
+            // 
+            pbRating2.Image = Properties.Resources.lop2Group_8;
+            pbRating2.Location = new Point(125, 74);
+            pbRating2.Margin = new Padding(3, 4, 3, 4);
+            pbRating2.Name = "pbRating2";
+            pbRating2.Size = new Size(25, 25);
+            pbRating2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating2.TabIndex = 23;
+            pbRating2.TabStop = false;
+            // 
+            // pbRating1
+            // 
+            pbRating1.Image = Properties.Resources.lop2Group_8;
+            pbRating1.Location = new Point(103, 74);
+            pbRating1.Margin = new Padding(3, 4, 3, 4);
+            pbRating1.Name = "pbRating1";
+            pbRating1.Size = new Size(25, 25);
+            pbRating1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating1.TabIndex = 22;
+            pbRating1.TabStop = false;
             // 
             // roundedPanel1
             // 
@@ -280,17 +348,6 @@
             label6.TabIndex = 10;
             label6.Text = "E - Ticket";
             // 
-            // PBRating
-            // 
-            PBRating.BackColor = Color.Transparent;
-            PBRating.Image = (Image)resources.GetObject("PBRating.Image");
-            PBRating.Location = new Point(98, 75);
-            PBRating.Margin = new Padding(3, 4, 3, 4);
-            PBRating.Name = "PBRating";
-            PBRating.Size = new Size(97, 20);
-            PBRating.TabIndex = 7;
-            PBRating.TabStop = false;
-            // 
             // labelnamaWisata
             // 
             labelnamaWisata.AutoSize = true;
@@ -309,11 +366,11 @@
             labelharga.AutoSize = true;
             labelharga.BackColor = Color.Transparent;
             labelharga.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelharga.Location = new Point(701, 57);
+            labelharga.Location = new Point(721, 57);
             labelharga.Name = "labelharga";
-            labelharga.Size = new Size(111, 36);
+            labelharga.Size = new Size(79, 36);
             labelharga.TabIndex = 8;
-            labelharga.Text = "Rp 10.000";
+            labelharga.Text = "10.000";
             // 
             // panelNavbar
             // 
@@ -326,7 +383,6 @@
             panelNavbar.Name = "panelNavbar";
             panelNavbar.Size = new Size(902, 77);
             panelNavbar.TabIndex = 0;
-            panelNavbar.Paint += panelNavbar_Paint;
             // 
             // button1
             // 
@@ -355,7 +411,18 @@
             labelMyTicket.Size = new Size(112, 36);
             labelMyTicket.TabIndex = 0;
             labelMyTicket.Text = " MyTicket";
-            labelMyTicket.Click += labelMyTicket_Click;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(685, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(42, 36);
+            label1.TabIndex = 14;
+            label1.Text = "Rp";
             // 
             // MyTicketRembangan
             // 
@@ -371,7 +438,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MyTicketRembangan";
             WindowState = FormWindowState.Maximized;
-            Load += MyTicketRembangan_Load;
             panelSidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             panelMain.ResumeLayout(false);
@@ -379,9 +445,13 @@
             panel1.PerformLayout();
             panelGambarWisata.ResumeLayout(false);
             panelGambarWisata.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbRating5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating1).EndInit();
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)PBRating).EndInit();
             panelNavbar.ResumeLayout(false);
             panelNavbar.PerformLayout();
             ResumeLayout(false);
@@ -402,7 +472,6 @@
         private Button button1;
         private Panel panel1;
         private Label labelharga;
-        private PictureBox PBRating;
         private Label labelnamaWisata;
         private Panel panelGambarWisata;
         private RoundedPanel roundedPanel1;
@@ -411,5 +480,11 @@
         private Label lbDeskripsi;
         private Label labeldeskripsiIsi;
         private Label namaDeskripsi;
+        private PictureBox pbRating5;
+        private PictureBox pbRating4;
+        private PictureBox pbRating3;
+        private PictureBox pbRating2;
+        private PictureBox pbRating1;
+        private Label label1;
     }
 }

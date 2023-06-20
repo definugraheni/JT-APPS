@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyTicket_jadi.Models;
+using MyTicket_jadi.Properties;
 using Npgsql;
 
 namespace MyTicket_jadi
@@ -59,18 +60,6 @@ namespace MyTicket_jadi
             this.Close();
         }
 
-        private void labelMyTicket_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void panelNavbar_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void panelSidebar_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -81,16 +70,100 @@ namespace MyTicket_jadi
             this.Close();
         }
 
-        private void MyTicketRembangan_Load(object sender, EventArgs e)
-        {
-
-        }
         public void SetMyticket(MyTiket myTiket)
         {
             labelnamaWisata.Text = myTiket.nama_wisata;
             labeldeskripsiIsi.Text = myTiket.deskripsi;
             namaDeskripsi.Text = myTiket.nama_wisata;
             labelharga.Text = myTiket.detailHarga.ToString();
+            pbRating1.Text = myTiket.rating.ToString();
+            pbRating2.Text = myTiket.rating.ToString();
+            pbRating3.Text = myTiket.rating.ToString();
+            pbRating4.Text = myTiket.rating.ToString();
+            pbRating5.Text = myTiket.rating.ToString();
+
+            float rating = myTiket.rating;
+            if (rating >= 0.5 && rating < 1)
+            {
+                pbRating1.Image = Resources.lopGroup_7;
+                pbRating2.Image = Resources.lop0Group_9;
+                pbRating3.Image = Resources.lop0Group_9;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 1 && rating < 1.5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop0Group_9;
+                pbRating3.Image = Resources.lop0Group_9;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 1.5 && rating < 2)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lopGroup_7;
+                pbRating3.Image = Resources.lop0Group_9;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 2 && rating < 2.5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop0Group_9;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 2.5 && rating < 3)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lopGroup_7;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 3 && rating < 3.5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop2Group_8;
+                pbRating4.Image = Resources.lop0Group_9;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 3.5 && rating < 4)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop2Group_8;
+                pbRating4.Image = Resources.lopGroup_7;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 4 && rating < 4.5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop2Group_8;
+                pbRating4.Image = Resources.lopGroup_7;
+                pbRating5.Image = Resources.lop0Group_9;
+            }
+            if (rating >= 4.5 && rating < 5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop2Group_8;
+                pbRating4.Image = Resources.lop2Group_8;
+                pbRating5.Image = Resources.lopGroup_7;
+            }
+            if (rating == 5)
+            {
+                pbRating1.Image = Resources.lop2Group_8;
+                pbRating2.Image = Resources.lop2Group_8;
+                pbRating3.Image = Resources.lop2Group_8;
+                pbRating4.Image = Resources.lop2Group_8;
+                pbRating5.Image = Resources.lop2Group_8;
+            }
+
         }
 
     }

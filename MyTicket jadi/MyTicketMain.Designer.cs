@@ -40,8 +40,14 @@
             btnPaket = new Button();
             Homepage = new Button();
             roundedPanel2 = new RoundedPanel();
-            button4 = new Button();
             label20 = new Label();
+            label7 = new Label();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            button4 = new Button();
             label19 = new Label();
             label13 = new Label();
             label14 = new Label();
@@ -50,20 +56,24 @@
             panel6 = new Panel();
             label15 = new Label();
             pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
             label16 = new Label();
             label17 = new Label();
             roundedPicbox2 = new RoundedPicbox();
             label18 = new Label();
             roundedPanel1 = new RoundedPanel();
-            panelGarisTiket = new Panel();
             labelHargaTiket = new Label();
+            labelRp = new Label();
+            pbRating5 = new PictureBox();
+            pbRating4 = new PictureBox();
+            pbRating3 = new PictureBox();
+            pbRating2 = new PictureBox();
+            panelGarisTiket = new Panel();
             labelKuantitas = new Label();
             buttonLihatWisata = new Button();
             pbMasaBerlakuTiket = new PictureBox();
             labelAlamatWisata = new Label();
             pbLocation = new PictureBox();
-            pbRating = new PictureBox();
+            pbRating1 = new PictureBox();
             lbNamaWisata = new Label();
             labelETiket = new Label();
             roundedPicboxWisata = new RoundedPicbox();
@@ -84,14 +94,22 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panelSidebar.SuspendLayout();
             roundedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)roundedPicbox2).BeginInit();
             roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbRating5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbMasaBerlakuTiket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbLocation).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbRating).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)roundedPicboxWisata).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -243,8 +261,14 @@
             // 
             roundedPanel2.Anchor = AnchorStyles.None;
             roundedPanel2.BackColor = Color.FromArgb(209, 232, 232);
-            roundedPanel2.Controls.Add(button4);
             roundedPanel2.Controls.Add(label20);
+            roundedPanel2.Controls.Add(label7);
+            roundedPanel2.Controls.Add(pictureBox3);
+            roundedPanel2.Controls.Add(pictureBox4);
+            roundedPanel2.Controls.Add(pictureBox5);
+            roundedPanel2.Controls.Add(pictureBox8);
+            roundedPanel2.Controls.Add(pictureBox9);
+            roundedPanel2.Controls.Add(button4);
             roundedPanel2.Controls.Add(label19);
             roundedPanel2.Controls.Add(label13);
             roundedPanel2.Controls.Add(label14);
@@ -253,7 +277,6 @@
             roundedPanel2.Controls.Add(panel6);
             roundedPanel2.Controls.Add(label15);
             roundedPanel2.Controls.Add(pictureBox7);
-            roundedPanel2.Controls.Add(pictureBox8);
             roundedPanel2.Controls.Add(label16);
             roundedPanel2.Controls.Add(label17);
             roundedPanel2.Controls.Add(roundedPicbox2);
@@ -264,6 +287,83 @@
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Size = new Size(846, 165);
             roundedPanel2.TabIndex = 1;
+            // 
+            // label20
+            // 
+            label20.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label20.AutoSize = true;
+            label20.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.Location = new Point(720, 68);
+            label20.Name = "label20";
+            label20.Size = new Size(71, 26);
+            label20.TabIndex = 13;
+            label20.Text = "25.000";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(694, 66);
+            label7.Name = "label7";
+            label7.Size = new Size(33, 26);
+            label7.TabIndex = 22;
+            label7.Text = "Rp";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.lop0Group_9;
+            pictureBox3.Location = new Point(200, 66);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(18, 19);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 21;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.lop2Group_8;
+            pictureBox4.Location = new Point(181, 66);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(18, 19);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 20;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.lop2Group_8;
+            pictureBox5.Location = new Point(162, 66);
+            pictureBox5.Margin = new Padding(3, 4, 3, 4);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(18, 19);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 19;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.lop2Group_8;
+            pictureBox8.Location = new Point(143, 66);
+            pictureBox8.Margin = new Padding(3, 4, 3, 4);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(18, 19);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 18;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = Properties.Resources.lop2Group_8;
+            pictureBox9.Location = new Point(124, 66);
+            pictureBox9.Margin = new Padding(3, 4, 3, 4);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(18, 19);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 17;
+            pictureBox9.TabStop = false;
             // 
             // button4
             // 
@@ -281,17 +381,6 @@
             button4.Text = "Lihat Detail";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            // 
-            // label20
-            // 
-            label20.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label20.AutoSize = true;
-            label20.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label20.Location = new Point(707, 68);
-            label20.Name = "label20";
-            label20.Size = new Size(97, 26);
-            label20.TabIndex = 13;
-            label20.Text = "Rp 25.000";
             // 
             // label19
             // 
@@ -383,16 +472,6 @@
             pictureBox7.TabIndex = 4;
             pictureBox7.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(123, 68);
-            pictureBox8.Margin = new Padding(3, 4, 3, 4);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(87, 19);
-            pictureBox8.TabIndex = 3;
-            pictureBox8.TabStop = false;
-            // 
             // label16
             // 
             label16.AutoSize = true;
@@ -439,14 +518,19 @@
             // 
             roundedPanel1.Anchor = AnchorStyles.None;
             roundedPanel1.BackColor = Color.FromArgb(209, 232, 232);
-            roundedPanel1.Controls.Add(panelGarisTiket);
             roundedPanel1.Controls.Add(labelHargaTiket);
+            roundedPanel1.Controls.Add(labelRp);
+            roundedPanel1.Controls.Add(pbRating5);
+            roundedPanel1.Controls.Add(pbRating4);
+            roundedPanel1.Controls.Add(pbRating3);
+            roundedPanel1.Controls.Add(pbRating2);
+            roundedPanel1.Controls.Add(panelGarisTiket);
             roundedPanel1.Controls.Add(labelKuantitas);
             roundedPanel1.Controls.Add(buttonLihatWisata);
             roundedPanel1.Controls.Add(pbMasaBerlakuTiket);
             roundedPanel1.Controls.Add(labelAlamatWisata);
             roundedPanel1.Controls.Add(pbLocation);
-            roundedPanel1.Controls.Add(pbRating);
+            roundedPanel1.Controls.Add(pbRating1);
             roundedPanel1.Controls.Add(lbNamaWisata);
             roundedPanel1.Controls.Add(labelETiket);
             roundedPanel1.Controls.Add(roundedPicboxWisata);
@@ -458,6 +542,72 @@
             roundedPanel1.Size = new Size(846, 165);
             roundedPanel1.TabIndex = 0;
             // 
+            // labelHargaTiket
+            // 
+            labelHargaTiket.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelHargaTiket.AutoSize = true;
+            labelHargaTiket.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelHargaTiket.Location = new Point(722, 59);
+            labelHargaTiket.Name = "labelHargaTiket";
+            labelHargaTiket.Size = new Size(67, 26);
+            labelHargaTiket.TabIndex = 11;
+            labelHargaTiket.Text = "10.000";
+            // 
+            // labelRp
+            // 
+            labelRp.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelRp.AutoSize = true;
+            labelRp.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelRp.Location = new Point(694, 58);
+            labelRp.Name = "labelRp";
+            labelRp.Size = new Size(33, 26);
+            labelRp.TabIndex = 23;
+            labelRp.Text = "Rp";
+            // 
+            // pbRating5
+            // 
+            pbRating5.Image = Properties.Resources.lop2Group_8;
+            pbRating5.Location = new Point(199, 65);
+            pbRating5.Margin = new Padding(3, 4, 3, 4);
+            pbRating5.Name = "pbRating5";
+            pbRating5.Size = new Size(18, 19);
+            pbRating5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating5.TabIndex = 16;
+            pbRating5.TabStop = false;
+            // 
+            // pbRating4
+            // 
+            pbRating4.Image = Properties.Resources.lop2Group_8;
+            pbRating4.Location = new Point(180, 65);
+            pbRating4.Margin = new Padding(3, 4, 3, 4);
+            pbRating4.Name = "pbRating4";
+            pbRating4.Size = new Size(18, 19);
+            pbRating4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating4.TabIndex = 15;
+            pbRating4.TabStop = false;
+            // 
+            // pbRating3
+            // 
+            pbRating3.Image = Properties.Resources.lop2Group_8;
+            pbRating3.Location = new Point(161, 65);
+            pbRating3.Margin = new Padding(3, 4, 3, 4);
+            pbRating3.Name = "pbRating3";
+            pbRating3.Size = new Size(18, 19);
+            pbRating3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating3.TabIndex = 14;
+            pbRating3.TabStop = false;
+            // 
+            // pbRating2
+            // 
+            pbRating2.Image = Properties.Resources.lop2Group_8;
+            pbRating2.Location = new Point(142, 65);
+            pbRating2.Margin = new Padding(3, 4, 3, 4);
+            pbRating2.Name = "pbRating2";
+            pbRating2.Size = new Size(18, 19);
+            pbRating2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating2.TabIndex = 13;
+            pbRating2.TabStop = false;
+            // 
             // panelGarisTiket
             // 
             panelGarisTiket.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -468,17 +618,6 @@
             panelGarisTiket.Name = "panelGarisTiket";
             panelGarisTiket.Size = new Size(756, 4);
             panelGarisTiket.TabIndex = 12;
-            // 
-            // labelHargaTiket
-            // 
-            labelHargaTiket.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            labelHargaTiket.AutoSize = true;
-            labelHargaTiket.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelHargaTiket.Location = new Point(709, 60);
-            labelHargaTiket.Name = "labelHargaTiket";
-            labelHargaTiket.Size = new Size(93, 26);
-            labelHargaTiket.TabIndex = 11;
-            labelHargaTiket.Text = "Rp 10.000";
             // 
             // labelKuantitas
             // 
@@ -539,15 +678,16 @@
             pbLocation.TabIndex = 4;
             pbLocation.TabStop = false;
             // 
-            // pbRating
+            // pbRating1
             // 
-            pbRating.Image = (Image)resources.GetObject("pbRating.Image");
-            pbRating.Location = new Point(123, 68);
-            pbRating.Margin = new Padding(3, 4, 3, 4);
-            pbRating.Name = "pbRating";
-            pbRating.Size = new Size(87, 19);
-            pbRating.TabIndex = 3;
-            pbRating.TabStop = false;
+            pbRating1.Image = Properties.Resources.lop2Group_8;
+            pbRating1.Location = new Point(123, 65);
+            pbRating1.Margin = new Padding(3, 4, 3, 4);
+            pbRating1.Name = "pbRating1";
+            pbRating1.Size = new Size(18, 19);
+            pbRating1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbRating1.TabIndex = 3;
+            pbRating1.TabStop = false;
             // 
             // lbNamaWisata
             // 
@@ -730,7 +870,6 @@
             flpMyTicket.Name = "flpMyTicket";
             flpMyTicket.Size = new Size(898, 672);
             flpMyTicket.TabIndex = 9;
-            flpMyTicket.Paint += flowLayoutPanel1_Paint;
             // 
             // MyTicketMain
             // 
@@ -753,15 +892,23 @@
             panelSidebar.ResumeLayout(false);
             roundedPanel2.ResumeLayout(false);
             roundedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)roundedPicbox2).EndInit();
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbRating5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbMasaBerlakuTiket).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbLocation).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbRating).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbRating1).EndInit();
             ((System.ComponentModel.ISupportInitialize)roundedPicboxWisata).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -794,7 +941,7 @@
         private PictureBox pbMasaBerlakuTiket;
         private Label labelAlamatWisata;
         private PictureBox pbLocation;
-        private PictureBox pbRating;
+        private PictureBox pbRating1;
         private Label lbNamaWisata;
         private Label labelETiket;
         private Label labelMasaBerlakuTiket;
@@ -819,7 +966,17 @@
         private Button btnPaket;
         private Button Homepage;
         private Panel panelGarisTiket;
-        private PictureBox pictureBox8;
         private FlowLayoutPanel flpMyTicket;
+        private PictureBox pbRating5;
+        private PictureBox pbRating4;
+        private PictureBox pbRating3;
+        private PictureBox pbRating2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
+        private Label label7;
+        private Label labelRp;
     }
 }
