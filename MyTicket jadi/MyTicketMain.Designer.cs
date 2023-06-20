@@ -323,7 +323,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.lop2Group_8;
+            pictureBox4.Image = Properties.Resources.lopGroup_7;
             pictureBox4.Location = new Point(181, 66);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
