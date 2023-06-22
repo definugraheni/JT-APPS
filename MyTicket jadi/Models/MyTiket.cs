@@ -9,14 +9,15 @@ namespace MyTicket_jadi.Models
 {
     public class MyTiket
     {
-        public string nama_wisata { get; set; }
-        public string alamat_wisata { get; set; }
-        public decimal harga_tiket { get; set; }
-        public int kuantitas  { get; set; }
+        public string NamaWisata { get; set; }
+        public string AlamatWisata { get; set; }
+        public decimal HargaTiket { get; set; }
+        public int Kuantitas  { get; set; }
 
-        public string deskripsi { get; set; }
-        public decimal detailHarga { get; set; }
-        public float rating { get; set; }  
-        
+        public string Deskripsi { get; set; }
+        public decimal DetailHarga { get; set; }
+        public float Rating { get; set; }
+        public Image Image { get; set; }
+
     }
 }

@@ -208,31 +208,32 @@ namespace MyTicket_jadi.Models
             labelKuantitas.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelKuantitas.AutoSize = true;
             labelKuantitas.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelKuantitas.Location = new Point(670, 60);
+            labelKuantitas.Location = new Point(660, 60);
             labelKuantitas.Name = "labelKuantitas";
             labelKuantitas.Size = new Size(29, 26);
 
             labelX.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelX.AutoSize = true;
             labelX.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelX.Location = new Point(687, 60);
+            labelX.Location = new Point(683, 60);
             labelX.Name = "labelKuantitas";
             labelX.Size = new Size(29, 26);
             labelX.Text = "X";
 
 
-            lbNamaWisata.Text = myTiket.nama_wisata;
-            labelAlamatWisata.Text = myTiket.alamat_wisata;
-            labelKuantitas.Text = myTiket.kuantitas.ToString();
-            labelHargaTiket.Text = myTiket.harga_tiket.ToString();
-            pbRating1.Text = myTiket.rating.ToString();
-            pbRating2.Text = myTiket.rating.ToString();
-            pbRating3.Text = myTiket.rating.ToString();
-            pbRating4.Text = myTiket.rating.ToString();
-            pbRating5.Text = myTiket.rating.ToString();
+            lbNamaWisata.Text = myTiket.NamaWisata;
+            labelAlamatWisata.Text = myTiket.AlamatWisata;
+            labelKuantitas.Text = myTiket.Kuantitas.ToString();
+            labelHargaTiket.Text = myTiket.HargaTiket.ToString();
+            roundedPicboxWisata.Image = myTiket.Image;
+            pbRating1.Text = myTiket.Rating.ToString();
+            pbRating2.Text = myTiket.Rating.ToString();
+            pbRating3.Text = myTiket.Rating.ToString();
+            pbRating4.Text = myTiket.Rating.ToString();
+            pbRating5.Text = myTiket.Rating.ToString();
 
 
-            float rating = myTiket.rating;
+            float rating = myTiket.Rating;
             if (rating >= 0.5 && rating < 1)
             {
                 pbRating1.Image = Resources.lopGroup_7;

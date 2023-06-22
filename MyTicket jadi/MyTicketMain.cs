@@ -60,10 +60,11 @@ namespace MyTicket_jadi
             foreach (var tiket in tiketList)
             {
 
-                lbNamaWisata.Text = tiket.nama_wisata;
-                labelAlamatWisata.Text = tiket.alamat_wisata;
-                labelKuantitas.Text = tiket.kuantitas.ToString();
-                labelHargaTiket.Text = tiket.harga_tiket.ToString();
+                lbNamaWisata.Text = tiket.NamaWisata;
+                labelAlamatWisata.Text = tiket.AlamatWisata;
+                labelKuantitas.Text = tiket.Kuantitas.ToString();
+                labelHargaTiket.Text = tiket.HargaTiket.ToString();
+                roundedPicboxWisata.Image = tiket.Image;
 
                 RoundedPanel ticketItem = new MyTicketItem(tiket).CreateItem();
                 flpMyTicket.Controls.Add(ticketItem);

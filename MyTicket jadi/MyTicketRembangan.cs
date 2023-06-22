@@ -72,17 +72,18 @@ namespace MyTicket_jadi
 
         public void SetMyticket(MyTiket myTiket)
         {
-            labelnamaWisata.Text = myTiket.nama_wisata;
-            labeldeskripsiIsi.Text = myTiket.deskripsi;
-            namaDeskripsi.Text = myTiket.nama_wisata;
-            labelharga.Text = myTiket.detailHarga.ToString();
-            pbRating1.Text = myTiket.rating.ToString();
-            pbRating2.Text = myTiket.rating.ToString();
-            pbRating3.Text = myTiket.rating.ToString();
-            pbRating4.Text = myTiket.rating.ToString();
-            pbRating5.Text = myTiket.rating.ToString();
+            labelnamaWisata.Text = myTiket.NamaWisata;
+            labeldeskripsiIsi.Text = myTiket.Deskripsi;
+            namaDeskripsi.Text = myTiket.NamaWisata;
+            labelharga.Text = myTiket.DetailHarga.ToString();
+            panelGambarWisata.BackgroundImage = myTiket.Image;
+            pbRating1.Text = myTiket.Rating.ToString();
+            pbRating2.Text = myTiket.Rating.ToString();
+            pbRating3.Text = myTiket.Rating.ToString();
+            pbRating4.Text = myTiket.Rating.ToString();
+            pbRating5.Text = myTiket.Rating.ToString();
 
-            float rating = myTiket.rating;
+            float rating = myTiket.Rating;
             if (rating >= 0.5 && rating < 1)
             {
                 pbRating1.Image = Resources.lopGroup_7;

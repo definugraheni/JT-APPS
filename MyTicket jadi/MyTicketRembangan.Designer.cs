@@ -38,6 +38,7 @@
             pictureBoxLogo = new PictureBox();
             panelMain = new Panel();
             panel1 = new Panel();
+            label1 = new Label();
             namaDeskripsi = new Label();
             labeldeskripsiIsi = new Label();
             lbDeskripsi = new Label();
@@ -55,7 +56,6 @@
             panelNavbar = new Panel();
             button1 = new Button();
             labelMyTicket = new Label();
-            label1 = new Label();
             panelSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panelMain.SuspendLayout();
@@ -198,6 +198,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(841, 552);
             panel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(685, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(42, 36);
+            label1.TabIndex = 14;
+            label1.Text = "Rp";
             // 
             // namaDeskripsi
             // 
@@ -411,18 +423,6 @@
             labelMyTicket.Size = new Size(112, 36);
             labelMyTicket.TabIndex = 0;
             labelMyTicket.Text = " MyTicket";
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(685, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(42, 36);
-            label1.TabIndex = 14;
-            label1.Text = "Rp";
             // 
             // MyTicketRembangan
             // 

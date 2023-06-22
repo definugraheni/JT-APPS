@@ -32,16 +32,22 @@ namespace MyTicket_jadi.Models
                     {
                         MyTiket newTiket = new MyTiket();
 
-                        newTiket.nama_wisata = (string)Reader["nama_wisata"];
-                        newTiket.alamat_wisata = (string)Reader["alamat_wisata"];
-                        newTiket.harga_tiket = Decimal.Parse(Reader["jumlah"].ToString());
-                        newTiket.kuantitas = (int)Reader["kuantitas"];
-                        newTiket.deskripsi = (string)Reader["deskripsi_wisata"];
-                        newTiket.detailHarga = Decimal.Parse(Reader["harga_tiket"].ToString());
-                        newTiket.rating = float.Parse(Reader["rating"].ToString());
+                        newTiket.NamaWisata = (string)Reader["nama_wisata"];
+                        newTiket.AlamatWisata = (string)Reader["alamat_wisata"];
+                        newTiket.HargaTiket = Decimal.Parse(Reader["jumlah"].ToString());
+                        newTiket.Kuantitas = (int)Reader["kuantitas"];
+                        newTiket.Deskripsi = (string)Reader["deskripsi_wisata"];
+                        newTiket.DetailHarga = Decimal.Parse(Reader["harga_tiket"].ToString());
+                        newTiket.Rating = float.Parse(Reader["rating"].ToString());
+
                         TiketList.Add(newTiket);
 
-
+                        byte[] imageBytes = (byte[])Reader["foto_wisata"];
+                        using (MemoryStream ms = new MemoryStream(imageBytes))
+                        {
+                            Image image = Image.FromStream(ms);
+                            newTiket.Image = image;
+                        }
                     }
                 }
             }
